@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./variables.scss";
+
+.section--hero {
+  background-image: url('../assets/images/hero-image.jpg');
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../assets/images/hero-mobile.jpg');
+  }
+}
+
+.section-how-it-work {
+  .card {
+    background: linear-gradient(252.91deg, #F78C81 0.54%, #F4D199 100%),
+    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    padding:3px;
+    border-radius: 16px;
+  }
+}
